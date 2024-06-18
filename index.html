@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="
+    Descubre mi plataforma de demostración de Chat Bot IA. Selecciona y prueba diferentes modelos de chat bot directamente en tu navegador. ¡Privacidad garantizada! Empieza ahora.
+    ">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat IA Local</title>
+    <details></details>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js" defer type="module"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/quantum.js"></script>
+    <link rel="shortcut icon" href="ChatBot.PNG" " type=" image/x-icon">
+</head>
+
+<body>
+    <section id="chat">
+        <label>Chat Bot <span style="color: #C6A6E6;">IA</span> Local</label>
+        <main>
+            <ul>
+                <li class="message bot">
+                    <span>IA </span>
+                    <p>
+                        Bienvenid@ a mi plataforma de demostración de Chat Bot IA 🤖✨
+                        <br><br>Para comenzar, selecciona un modelo de la lista 📋
+                        <br><br>El modelo se descargará y configurará automáticamente en tu navegador ⚙️
+                        <br><br><span style="font-weight: bold;">Carcteristicas:</span>
+                    <ul>
+                        <li>• Todo lo que preguntes será totalmente privado 🔒</li>
+                        <li>• El tiempo de respuesta dependerá de la capacidad de VRAM de tu equipo
+                            y del modelo
+                            ⏱️</li>
+                    </ul>
+                    ¡Disfruta la demostración! 🎉
+                    </p>
+                </li>
+            </ul>
+        </main>
+
+        <section id="model_ai">
+            <div>
+                <label>Modelo</label>
+                <select id="selected_model" class="pulse">
+                    <option selected label="Selecciona una IA para chatear..." value="" disabled>
+                </select>
+            </div>
+            <small id="info_module">&nbsp;</small>
+        </section>
+
+
+        <form>
+            <textarea id="input" type="text" placeholder="Escribe tu mensaje aquí...." maxlength="255"></textarea>
+            <button disabled="true">Enviar</button>
+        </form>
+
+
+        <template id="template-message">
+            <li class="message">
+                <span></span>
+                <l-quantum class="loader" size="43" speed="1.3" color="#E8E8E8" style="padding: 8px;"></l-quantum>
+                <p></p>
+            </li>
+        </template>
+    </section>
+</body>
+<footer>
+    Desarrollado por <a href="https://juliobuscer.netlify.app/"> Julio Buscer</a>
+</footer>
+
+</html>
